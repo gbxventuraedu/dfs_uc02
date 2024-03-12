@@ -1,5 +1,5 @@
 # UC02 - Matéria 02
 - [x]  Git/GitHub
-- [ ]  HTML
-- [ ]  CSS
+- [x]  HTML
+- [x]  CSS
 - [ ]  JS
