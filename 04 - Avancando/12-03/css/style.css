@@ -1,5 +1,7 @@
 * {
   color: white;
+  border-radius: 5px;
+  padding: 3px;
 }
 body {
   background-color: blueviolet;
@@ -67,4 +69,13 @@ h2 {
   /* color: #aa55ff; */
   color: #a5f;
   background-color: white;
+}
+
+.rgb {
+  color: rgb(255, 0, 0);
+  background-color: #fff;
+}
+.mixed-rgb {
+  color: rgb(199, 21, 47);
+  background-color: #fff;
 }
