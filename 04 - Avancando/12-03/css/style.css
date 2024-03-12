@@ -110,4 +110,17 @@ h2 {
 }
 .rgba-opacity3 {
   background-color: rgba(90, 12, 20, 0.2);
+  opacity: 0.2;
+}
+
+.centered-bg,
+.not-centered-bg {
+  background-image: url(../imgs/bridge.jpg);
+  height: 400px;
+  width: 400px;
+}
+.centered-bg {
+  border: 4px dotted purple;
+  background-position: center;
+  background-size: cover;
 }
