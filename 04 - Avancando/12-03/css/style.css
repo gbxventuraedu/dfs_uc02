@@ -1,5 +1,16 @@
+* {
+  color: white;
+}
 body {
   background-color: blueviolet;
+}
+.content {
+  background-color: rgb(174, 130, 214);
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 p {
   color: violet;
@@ -47,11 +58,13 @@ h2 {
   background-color: #55a398;
   color: white;
 }
-.content {
-  background-color: rgb(174, 130, 214);
-  margin: 20px;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.simple-hex {
+  /* color: #333333; */
+  color: #333;
+}
+.simple-hex-2 {
+  /* color: #aa55ff; */
+  color: #a5f;
+  background-color: white;
 }
