@@ -1,41 +1,57 @@
-/* body{
-    background-color: yellow;
-} */
- p{
-    color: violet;
-    font-size: 80px;
-
-} 
-
-body{
-    padding-bottom: 500px;
+body {
+  background-color: blueviolet;
+}
+p {
+  color: violet;
+  font-size: 80px;
 }
 
-.paragrah{
-    background-color: black;
-    color: aqua;
-    padding: 5px;
-
+body {
+  padding-bottom: 500px;
 }
 
-#exclusive-title{
-    background-color: purple;
-    color: aliceblue;
-    padding: 10px;
-    font-size: 40px;
+.paragrah {
+  background-color: black;
+  color: aqua;
+  padding: 5px;
 }
 
-
-h2{
-    border-bottom: 2px dotted red;
-
+#exclusive-title {
+  background-color: purple;
+  color: aliceblue;
+  padding: 10px;
+  font-size: 40px;
 }
 
-.titulo{
-    border-bottom: 3px solid blue;
-
+h2 {
+  border-bottom: 2px dotted red;
 }
 
-#algum-titulo{
-    border-bottom: 4px solid green;
+.titulo {
+  border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+  border-bottom: 4px solid green;
+}
+
+.color-name {
+  color: crimson;
+}
+
+.hex {
+  background-color: green;
+  color: white;
+}
+.hex-2 {
+  background-color: #55a398;
+  color: white;
+}
+.content {
+  background-color: rgb(174, 130, 214);
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
