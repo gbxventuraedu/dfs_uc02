@@ -7,7 +7,7 @@ body {
   background-color: blueviolet;
 }
 .content {
-  background-color: rgb(174, 130, 214);
+  background-color: rgba(174, 130, 214, 0.5);
   margin: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -78,4 +78,23 @@ h2 {
 .mixed-rgb {
   color: rgb(199, 21, 47);
   background-color: #fff;
+}
+.rgba {
+  color: rgba(255, 0, 0, 0.5);
+  background-color: #fff;
+}
+.bg-image {
+  text-align: center;
+  padding: 20px;
+  background-image: url(../imgs/nature.jpg);
+}
+.bg-image2 {
+  text-align: center;
+  padding: 20px;
+  background-image: url(../imgs/bridge.jpg);
+}
+.bg-image3 {
+  text-align: center;
+  padding: 20px;
+  background-image: url(../imgs/city.jpg);
 }
