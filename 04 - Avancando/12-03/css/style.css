@@ -89,6 +89,7 @@ h2 {
   background-image: url(../imgs/nature.jpg);
 }
 .bg-image2 {
+  color: #333;
   text-align: center;
   padding: 20px;
   background-image: url(../imgs/bridge.jpg);
@@ -97,4 +98,16 @@ h2 {
   text-align: center;
   padding: 20px;
   background-image: url(../imgs/city.jpg);
+}
+.bg-opacity {
+  background-color: green;
+  opacity: 0.5;
+}
+.bg-opacity2 {
+  background-color: #999;
+  color: #000;
+  opacity: 0.8;
+}
+.rgba-opacity3 {
+  background-color: rgba(90, 12, 20, 0.2);
 }
