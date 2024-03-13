@@ -188,3 +188,40 @@ h2 {
   border-radius: 25px;
   border: 3px solid green;
 }
+.box-model {
+  margin: 20px;
+  font-size: 20px;
+  font-family: monospace;
+  background-color: black;
+  color: green;
+  padding: 15px 25px;
+  border: 2px solid green;
+  border-radius: 20px;
+  width: 200px;
+  height: 400px;
+}
+#desafio03 {
+  background-color: rgba(26, 25, 25, 0.6);
+  font-family: monospace;
+  color: white;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 20px;
+  width: auto;
+  height: 400px;
+  text-align: center;
+  height: auto;
+}
+.texto-desafio03 {
+  font-size: 1.7ch;
+  color: green;
+  font-family: monospace;
+  text-align: center;
+  background-color: #000;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 20px;
+  width: auto;
+}
