@@ -6,19 +6,19 @@
 body {
   /* background-color: blueviolet; */
   background-image: url(../imgs/natureza2.jpeg);
-  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-color: #000000;
+  background-size: cover;
 }
 .content {
   background-color: rgba(16, 46, 32, 0.9);
-  margin: 20px;
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@ p {
 }
 
 body {
-  padding-bottom: 500px;
+  padding-bottom: 50px;
 }
 
 .paragrah {
@@ -150,4 +150,9 @@ h2 {
 .padding {
   padding: 20px;
   background-color: #333;
+}
+
+.padding:hover {
+  padding: 23px;
+  background-color: #f75454;
 }
