@@ -230,3 +230,56 @@ h2 {
   border: 2px solid red;
   margin-left: 130px;
 }
+.underline {
+  text-decoration: underline;
+}
+.line-trough {
+  text-decoration: line-through;
+}
+.remover-underline {
+  text-decoration: none;
+}
+.upper {
+  text-transform: uppercase;
+}
+.lower {
+  text-transform: lowercase;
+}
+.spacing {
+  letter-spacing: 2px;
+}
+.serif {
+  font-family: serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.monospace {
+  font-family: monospace;
+}
+.cursive {
+  font-family: cursive;
+}
+.fantasy {
+}
+.italic {
+  font-style: italic;
+}
+.oblique {
+  font-style: oblique;
+}
+.thin {
+  font-weight: 100;
+}
+.bold {
+  font-weight: 700;
+}
+.bolder {
+  font-weight: bolder;
+}
+.small {
+  font-size: small;
+}
+.big {
+  font-size: big;
+}
