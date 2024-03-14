@@ -1,16 +1,3 @@
-.content {
-  background-color: rgba(0, 102, 255, 0.8);
-  border: solid 2px black;
-  border-radius: 10px;
-  padding: 10px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 70%;
-}
-
 body {
   padding-bottom: 500px;
   background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%));
@@ -230,4 +217,16 @@ h2 {
   border-radius: 10px;
   margin: 20px;
   width: auto;
+}
+
+.text-aligned {
+  text-align: right;
+}
+
+.container-center {
+  text-align: center;
+  background-color: #fff;
+  width: 300px;
+  border: 2px solid red;
+  margin-left: 130px;
 }
