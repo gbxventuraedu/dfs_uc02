@@ -284,3 +284,56 @@ h2 {
 .big {
   font-size: 78px;
 }
+
+/* 26 - DISPLAY ETC */
+
+.inline-box {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  margin: 10px;
+  display: inline-block;
+}
+.block {
+  background-color: #333;
+  margin: 10px;
+  display: block;
+}
+.invisivel {
+  background-color: #a5f;
+  display: none;
+}
+.static {
+  background-color: #4f8;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 5px;
+  position: static;
+}
+.relative {
+  background-color: #942;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  left: 400px;
+}
+.absolute {
+  position: absolute;
+  background-color: #964;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  right: 20px;
+}
+.absolute-2 {
+}
+.fixed {
+  position: fixed;
+}
+.absolute-3 {
+}
+.absolute-4 {
+}
+.absolute-5 {
+}
