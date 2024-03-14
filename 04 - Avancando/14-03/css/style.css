@@ -261,6 +261,7 @@ h2 {
   font-family: cursive;
 }
 .fantasy {
+  font-family: fantasy;
 }
 .italic {
   font-style: italic;
@@ -272,14 +273,14 @@ h2 {
   font-weight: 100;
 }
 .bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 .bolder {
-  font-weight: bolder;
+  font-weight: 900;
 }
 .small {
-  font-size: small;
+  font-size: 6px;
 }
 .big {
-  font-size: big;
+  font-size: 78px;
 }
