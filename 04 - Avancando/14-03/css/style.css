@@ -330,6 +330,11 @@ h2 {
 }
 .fixed {
   position: fixed;
+  background-color: #964;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  right: 20px;
 }
 .absolute-3 {
 }
