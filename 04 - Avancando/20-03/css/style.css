@@ -1,0 +1,18 @@
+@import url(font.css);
+body {
+  background-color: #ccc;
+  font-family: sfrancisco;
+}
+.container {
+  font-size: 20px;
+  background-color: #fff;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
