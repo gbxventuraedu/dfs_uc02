@@ -1,0 +1,27 @@
+h1 {
+  color: red;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    color: blue;
+  }
+}
+
+p {
+  background-color: #789;
+  color: rebeccapurple;
+}
+
+@media screen and (min-width: 700px) {
+  p {
+    color: blue;
+  }
+}
+h3 {
+  display: none;
+}
+@media screen and (orientation: landscape) {
+  h3 {
+    display: block;
+  }
+}
