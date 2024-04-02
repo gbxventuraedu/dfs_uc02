@@ -2,7 +2,7 @@
 
 let nota = parseInt(prompt(`Digite um número: `));
 
-if(nota >= 0 && nota <= 10){
+if(nota <= 10){
     console.log(`O nota ${nota} é válida!`);
 }
 else{
