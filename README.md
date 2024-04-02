@@ -2,4 +2,4 @@
 - [x]  Git/GitHub
 - [x]  HTML
 - [x]  CSS
-- [ ]  JS
+- [x]  JS
