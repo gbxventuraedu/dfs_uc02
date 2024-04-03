@@ -8,19 +8,15 @@ switch(operacao){
     case "+":
         console.log(`O resultado de ${n1} + ${n2} = ${n1 + n2}`);
         break;
-
     case "-":
         console.log(`O resultado de ${n1} - ${n2} = ${n1 - n2}`);
         break;
-
     case "*":
         console.log(`O resultado de ${n1} * ${n2} = ${n1 * n2}`);
         break;
-
     case "/":
         console.log(`O resultado de ${n1} / ${n2} = ${n1 / n2}`);
         break;
-
     default:
         console.log(`Somente + ou - ou * ou / `);
 }
