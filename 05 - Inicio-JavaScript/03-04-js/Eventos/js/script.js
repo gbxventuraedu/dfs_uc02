@@ -1,15 +1,14 @@
-const btn = document.querySelector("#my-button");
+const btn = document.querySelector("#my-button")
 
 btn.addEventListener("click", function () {
-  console.log("clicou");
-});
+    console.log("Clicou!")
+})
 
 // Test
-
 const secondBtn = document.querySelector("#btn");
 
 function imprimirMensagem() {
-  console.log("Teste");
+    console.log("Teste");
 }
 secondBtn.addEventListener("click", imprimirMensagem);
 
