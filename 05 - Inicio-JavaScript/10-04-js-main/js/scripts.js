@@ -20,3 +20,16 @@ function generateQRCode() {
 qrCodeBtn.addEventListener("click", () => {
   generateQRCode();
 });
+// quando o usuário pressionar a tecla Enter, chama a função generateQRCode()
+qrCodeInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    generateQRCode();
+  }
+});
+
+qrCodeInput.addEventListener("keyup", (e) => {
+  if (!qrCodeInput.value) {
+    container.classList.remove("active");
+    qrCodeBtn.innerText = "Gerar código QRCode";
+  }
+});
