@@ -2,6 +2,7 @@ const container = document.querySelector(".container");
 const qrCodeBtn = document.querySelector("#qr-form button");
 const qrCodeInput = container.querySelector("#qr-form input");
 const qrCodeImg = container.querySelector("#qr-code img");
+const downloadBtn = document.querySelector("#download-btn");
 function generateQRCode() {
   let qrCodeInputValue = qrCodeInput.value;
   //se não tiver valor, não faz nada.
@@ -33,3 +34,23 @@ qrCodeInput.addEventListener("keyup", (e) => {
     qrCodeBtn.innerText = "Gerar código QRCode";
   }
 });
+
+function downloadQR() {
+  //URL da imagem gerada
+  let imgUrl = qrCodeImg.src;
+  //Criar elemento <a> para download
+  let link = document.createElement("a");
+  link.href = imgUrl;
+  //Definir nome do arquivo
+  link.download = "qrcode.png";
+  //Simular click para iniciar download
+  link.click();
+}
+
+downloadBtn.addEventListener("click", () => {
+  downloadQR();
+});
+
+// downloadBtn.addEventListener("click", () => {
+//   downloadQR();
+// });
