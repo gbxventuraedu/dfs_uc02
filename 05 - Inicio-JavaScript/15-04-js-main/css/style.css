@@ -1,0 +1,23 @@
+:root {
+  --branco: #fff;
+  --azul-bebe: rgba(0, 76, 255, 0.702);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system;
+}
+
+body {
+  background-color: var(--branco);
+}
+img {
+  width: 200px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
