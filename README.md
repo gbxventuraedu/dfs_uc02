@@ -4,4 +4,4 @@
 - [x] CSS
 - [x] JS
 - [X] PUBLICAÇÃO WEB
-- [ ] PHP
+- [ ] SQL
