@@ -1,0 +1,17 @@
+.div-teste {
+  color: white;
+  text-align: center;
+  margin: 100px;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: border 1s;
+  transition: background-color 1s;
+  transition: padding 1.5s;
+  background-color: #2626cc;
+}
+.div-teste:hover {
+  border: 2px solid red;
+  background-color: black;
+  padding: 100px;
+  transition: padding 3s;
+}
