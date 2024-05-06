@@ -4,4 +4,5 @@
 - [x] CSS
 - [x] JS
 - [X] PUBLICAÇÃO WEB
+- [ ] REACT JS
 - [ ] SQL
