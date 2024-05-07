@@ -7,7 +7,7 @@ CREATE database dbGabyBolos;
 -- acessando o banco de dados
 USE dbGabyBolos;
 
--- visualizando as tabelas dentro do DBa
+-- visualizando as tabelas dentro do DB
 SHOW tables;
 
 -- criando tabelas
