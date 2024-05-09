@@ -1,13 +1,72 @@
--- apagando DB se exisitr
-DROP DATABASE dbLoja;
--- criando banco de dados
-CREATE DATABASE dbLoja;
--- acessando o DB
-USE dbLoja;
--- Visualizando o banco de dados
-SHOW databases;
--- visualizando as tabelas criadas
-SHOW TABLES;
+DROP DATABASE dbConstrutora;
+CREATE DATABASE dbConstrutora;
+USE dbConstrutora;
+-- Criando as tabela
+-- tabela Funcionarios
+CREATE TABLE tbFuncionarios(
+    codFunc INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    cpf CHAR(14) NOT NULL UNIQUE,
+    telCel CHAR(10),
+    logradouro VARCHAR(100),
+    numero CHAR(10),
+    cep CHAR(9),
+    bairro VARCHAR(100),
+    cidade VARCHAR(100),
+    estado CHAR(2),
+    PRIMARY KEY(codFunc)
+);
+-- Criar Fornecedores
+CREATE TABLE tbFornecedores(
+    codForn INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    cnpj CHAR (16) NOT NULL UNIQUE,
+    PRIMARY KEY(codForn)
+);
+--Clientes
+CREATE TABLE tbClientes(
+    codCli INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    cpf CHAR (14) NOT NULL UNIQUE,
+    PRIMARY KEY (codCli)
+);
+-- tabelas Usuarios
+CREATE TABLE tbUsuarios(
+    codUsu INT AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    senha VARCHAR(20) NOT NULL,
+    codFunc INT NOT NULL,
+    PRIMARY KEY(codUsu),
+    FOREIGN KEY(codFunc) REFERENCES tbFuncionarios (codFunc)
+);
+CREATE TABLE tbProdutos(
+    codProd INT NOT NULL AUTO_INCREMENT,
+    descricao VARCHAR(100),
+    valor DECIMAL(9, 2),
+    quantidade INT,
+    data DATE,
+    hora TIME,
+    codForn INT NOT NULL,
+    PRIMARY KEY(codProd),
+    FOREIGN KEY(codForn) REFERENCES tbFornecedores(codForn)
+);
+CREATE TABLE tbVendas(
+    codVend INT NOT NULL AUTO_INCREMENT,
+    valor DECIMAL(9, 2),
+    data date,
+    hora time,
+    quantidade int,
+    codUsu int not null,
+    codProd int not null,
+    codCli int not null,
+    PRIMARY KEY(codVend),
+    FOREIGN KEY (codUsu) REFERENCES tbUsuarios(codUsu),
+    FOREIGN KEY (codProd) REFERENCES tbProdutos(codProd),
+    FOREIGN KEY (codCli) REFERENCES tbClientes(codCli)
+);
 -- Funcionario 01
 INSERT INTO tbFuncionarios(
         nome,
@@ -144,7 +203,6 @@ INSERT INTO tbUsuarios(nome, senha, codFunc)
 VALUES('julia.roberta', 'kdjfk230@*&', 4);
 INSERT INTO tbUsuarios(nome, senha, codFunc)
 VALUES('victor.gabriel', 'isds0394@()(@k)', 5);
--- Visualizando os registros nos campos das tabelas
 SELECT *
 FROM tbUsuarios;
 SELECT *
@@ -157,10 +215,3 @@ SELECT *
 FROM tbProdutos;
 SELECT *
 FROM tbVendas;
--- visualizando as estruturas das tabelas
-DESC tbUsuarios;
-DESC tbFuncionarios;
-DESC tbClientes;
-DESC tbUsuarios;
-DESC tbProdutos;
-DESC tbVendas;
