@@ -4,5 +4,5 @@
 - [x] CSS
 - [x] JS
 - [X] PUBLICAÇÃO WEB
-- [ ] ReactJS
+- [ ] ReactJS + Vite
 - [ ] SQL
