@@ -1,9 +1,26 @@
 body {
-  background-color: darkblue;
+  background: linear-gradient(90deg, rgb(104, 43, 226), rgb(74, 31, 161));
+  font-family: monospace;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
+.AppFundamentos {
+  padding: 10px;
+}
+button {
+  margin-top: 20px;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  transition: 1s padding ease-in, 1s background-color ease-in-out;
+}
+button:hover {
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px solid wheat;
+  background-color: rgba(255, 255, 255, 0.5);
 }

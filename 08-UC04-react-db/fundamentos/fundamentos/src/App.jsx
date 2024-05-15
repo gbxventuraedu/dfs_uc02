@@ -1,8 +1,9 @@
 import './App.css';
+import HierarquiaComponentes from './componentes/HierarquiaComponentes';
 import PrimeiroComponentes from './componentes/PrimeiroComponentes';
-
-// Importando TemplateExpressions
 import TemplateExpressions from './componentes/TemplateExpressions';
+import EventoClick from './componentes/EventoClick';
+
 
 // Exibindo componente importado na tela
 function App() {
@@ -11,6 +12,8 @@ function App() {
       <h1>Primeiros Fundamentos</h1>
       <PrimeiroComponentes/>
       <TemplateExpressions/>
+      <HierarquiaComponentes/>
+      <EventoClick />
     </div>
   )
 }
