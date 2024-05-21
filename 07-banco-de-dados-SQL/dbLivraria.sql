@@ -1,102 +1,160 @@
----- REMOVENDO TABELA EXISTENTE, EXCLUINDO E ACESSANDO.
-DROP DATABASE dblivraria;
-CREATE DATABASE dblivraria;
-USE dblivraria;
----- CRIANDO TABELAS
-CREATE TABLE tbAutor(
-    idAutor INT NOT NULL AUTO_INCREMENT,
-    nomeAutor VARCHAR(100),
-    emailAutor VARCHAR(100),
-    PRIMARY KEY(idAutor)
+drop database dbLivraria;
+create database dbLivraria;
+use dbLivraria;
+create table tbGeneros(
+    idGenero int not null auto_increment,
+    descricao varchar(100),
+    primary key(idGenero)
 );
-CREATE TABLE tbGenero(
-    idGenero INT NOT NULL AUTO_INCREMENT,
-    descricao VARCHAR(100),
-    PRIMARY KEY(idGenero)
+create table tbAutores(
+    idAutor int not null auto_increment,
+    nome varchar(100),
+    email varchar(100),
+    primary key(idAutor)
 );
-CREATE TABLE tbLivro(
-    idLivro INT NOT NULL AUTO_INCREMENT,
-    tituloLivro VARCHAR(100),
-    precoLivro FLOAT(9, 2),
-    estoqueLivro INT NOT NULL,
-    idGenero INT NOT NULL,
-    PRIMARY KEY(idLivro),
-    FOREIGN KEY(idGenero) REFERENCES tbGenero(idGenero)
+create table tbClientes(
+    idCliente int not null auto_increment,
+    nome varchar(100),
+    telefone char(10),
+    primary key(idCliente)
 );
----- Criando tabela para relação do tbLivro e tbEscreve
-CREATE TABLE tbEscreve(
-    idAutor INT NOT NULL,
-    idLivro INT NOT NULL,
-    FOREIGN KEY(idAutor) REFERENCES tbAutor(idAutor),
-    FOREIGN KEY(idLivro) REFERENCES tbLivro(idLivro)
+create table tbLivros(
+    idLivro int not null auto_increment,
+    titulo varchar(100),
+    preco decimal(9, 2),
+    estoque int,
+    idGenero int not null,
+    primary key(idLivro),
+    foreign key(idGenero) references tbGeneros(idGenero)
 );
-CREATE TABLE tbCliente(
-    idCliente INT NOT NULL AUTO_INCREMENT,
-    nomeCliente VARCHAR(100),
-    telefone VARCHAR(45),
-    PRIMARY KEY(idCliente)
+create table tbVendas(
+    idVenda int not null auto_increment,
+    data date,
+    total decimal(9, 2),
+    idCliente int not null,
+    primary key(idVenda),
+    foreign key(idCliente) references tbClientes(idCliente)
 );
-CREATE TABLE tbVenda(
-    idVenda INT NOT NULL AUTO_INCREMENT,
-    data DATE,
-    total FLOAT,
-    idCliente INT,
-    PRIMARY KEY(idVenda),
-    FOREIGN KEY(idCliente) REFERENCES tbCliente(idCliente)
+create table tbItens_Vendas(
+    idVenda int not null,
+    idLivro int not null,
+    quantidade int,
+    subTotal decimal(9, 2),
+    foreign key(idVenda) references tbVendas(idVenda),
+    foreign key(idLivro) references tbLivros(idLivro)
 );
-CREATE TABLE tbitens_da_venda(
-    qtd INT NOT NULL,
-    subTotal VARCHAR(45),
-    idLivro INT NOT NULL,
-    idVenda INT NOT NULL,
-    FOREIGN KEY(idVenda) REFERENCES tbVenda(idVenda),
-    FOREIGN KEY(idLivro) REFERENCES tbLivro(idLivro)
+create table tbEscreve(
+    idLivro int not null,
+    idAutor int not null,
+    foreign key(idLivro) references tbLivros(idLivro),
+    foreign key(idAutor) references tbAutores(idAutor)
 );
----- INSERINDO DADOS NA TABELA
--- tbAutor
-INSERT INTO tbAutor(nomeAutor, emailAutor)
-VALUES("Roberto Santos", "roberto.livros@gmail.com");
-INSERT INTO tbAutor(nomeAutor, emailAutor)
-VALUES("Kelly Alves", "kelly.alivros@hotmail.com");
--- TbGenero
-INSERT INTO tbGenero(descricao)
-VALUES (
-        "Uma descricao bem explicativa do livro aqui para preencher espacos e saber que esta funcionando."
+desc tbGeneros;
+desc tbAutores;
+desc tbClientes;
+desc tbLivros;
+desc tbVendas;
+desc tbItens_Vendas;
+desc tbEscreve;
+-- cadastrando os registros nas tabelas
+insert into tbGeneros(descricao)
+values('Acao');
+insert into tbGeneros(descricao)
+values('Ficcao');
+insert into tbGeneros(descricao)
+values('Aventura');
+insert into tbGeneros(descricao)
+values('Terror');
+insert into tbGeneros(descricao)
+values('Comedia');
+insert into tbGeneros(descricao)
+values('Romance');
+insert into tbGeneros(descricao)
+values('Documentario');
+insert into tbAutores(nome, email)
+values('Joanne Lipman', 'joanne.lipman@hotmail.com');
+insert into tbAutores(nome, email)
+values('Joseph Grenny', 'joseph.grenny@hotmail.com');
+insert into tbAutores(nome, email)
+values('Jonah Berger', 'jonah.berger@hotmail.com');
+insert into tbAutores(nome, email)
+values('Uri Levine', 'uri.levine@hotmail.com');
+insert into tbAutores(nome, email)
+values('Annie Duke', 'annie.duke@hotmail.com');
+insert into tbAutores(nome, email)
+values(
+        'Vanessa Van Edwards',
+        'vanessa.veduwards@hotmail.com'
     );
-INSERT INTO tbGenero(descricao)
-VALUES(
-        "Uma descricao bem explicativa do livro aqui para preencher espacos e saber que esta funcionando."
-    );
--- tbLivro
-INSERT INTO tbLivro(tituloLivro, precoLivro, estoqueLivro, idGenero)
-VALUES("O Primeiro Livro", 38.99, 59, 1);
-INSERT INTO tbLivro(tituloLivro, precoLivro, estoqueLivro, idGenero)
-VALUES("O Segund Livro", 50.99, 100, 2);
--- tbCliente
-INSERT INTO tbCliente(nomeCliente, telefone)
-VALUES ("Leticia", "99999-9999");
-INSERT INTO tbCliente(nomeCliente, telefone)
-VALUES ("Leandro", "98888-8888");
--- tbVenda
-INSERT INTO tbVenda(data, total, idCliente)
-VALUES ("2024-05-13", 1, 1);
-INSERT INTO tbVenda(data, total, idCliente)
-VALUES ("2024-05-13", 1, 2);
--- tbitens_da_venda
-INSERT INTO tbitens_da_venda(qtd, subtotal, idLivro, idVenda)
-VALUES (1, 38.99, 1, 1);
-INSERT INTO tbitens_da_venda(qtd, subtotal, idLivro, idVenda)
-VALUES (1, 50.99, 2, 2);
----- SEÇÃO SELECT - CONSULTA
+insert into tbAutores(nome, email)
+values('Peter N. Stearns', 'peter.nstearns@hotmail.com');
+insert into tbClientes(nome, telefone)
+values('Eduardo Lucas', '95741-5874');
+insert into tbClientes(nome, telefone)
+values('Maria Gabrielly', '93547-7412');
+insert into tbClientes(nome, telefone)
+values('Ana Paula Pereira', '92365-8574');
+insert into tbLivros(titulo, preco, estoque, idGenero)
+values('Escute o que ela diz', 55.47, 3, 4);
+insert into tbLivros(titulo, preco, estoque, idGenero)
+values('Como decidir', 59.92, 8, 1);
+insert into tbLivros(titulo, preco, estoque, idGenero)
+values('Historia da felicidade', 71.11, 5, 6);
+insert into tbLivros(titulo, preco, estoque, idGenero)
+values('A linguagem secreta do carisma', 46.47, 5, 5);
+insert into tbVendas(data, total, idCliente)
+values('2024-05-16', 150.50, 2);
+insert into tbVendas(data, total, idCliente)
+values('2024-05-14', 230.25, 1);
+insert into tbVendas(data, total, idCliente)
+values('2024-05-16', 350.00, 3);
+insert into tbItens_Vendas(idVenda, idLivro, quantidade, subTotal)
+values(3, 4, 5, 150.00);
+insert into tbItens_Vendas(idVenda, idLivro, quantidade, subTotal)
+values(1, 3, 10, 350.00);
+insert into tbItens_Vendas(idVenda, idLivro, quantidade, subTotal)
+values(2, 1, 12, 550.00);
+insert into tbEscreve(idLivro, idAutor)
+values(4, 7);
+insert into tbEscreve(idLivro, idAutor)
+values(3, 5);
+insert into tbEscreve(idLivro, idAutor)
+values(1, 6);
+-- Pesquisar os campos das tabelas
+select *
+from tbGeneros;
+select *
+from tbAutores;
+select *
+from tbClientes;
+select *
+from tbLivros;
+select *
+from tbVendas;
+select *
+from tbItens_Vendas;
+select *
+from tbEscreve;
+-- Alterando registros das tabelas
+--
+-- Alterando tbClientes
+UPDATE tbClientes
+SET nome = "Patricio Antunees de Souza",
+    telefone = "98754-4567"
+WHERE idCliente = 3;
+-- Alterando tbLivros
+UPDATE tbLivros
+SET titulo = "O melhor Titulo do mundo",
+    preco = 140.50,
+    estoque = 3,
+    idGenero = 6
+WHERE idLivro = 1;
+UPDATE tbLivros
+SET titulo = "O pior Titulo do mundo",
+    preco = 123.99,
+    estoque = 234,
+    idGenero = 2
+WHERE idLivro = 2;
+--
 SELECT *
-FROM tbAutor;
-SELECT *
-FROM tbGenero;
-SELECT *
-FROM tbLivro;
-SELECT *
-FROM tbCliente;
-SELECT *
-FROM tbVenda;
-SELECT *
-FROM tbitens_da_venda;
+FROM tbLivros;
