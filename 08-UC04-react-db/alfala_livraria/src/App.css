@@ -6,4 +6,8 @@
 .App-header {
   background-color: #fff;
   display: flex;
+  padding: 10px;
+}
+li {
+  list-style: none;
 }
