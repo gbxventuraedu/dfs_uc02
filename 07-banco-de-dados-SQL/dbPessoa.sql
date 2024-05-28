@@ -47,3 +47,12 @@ SELECT nome,email,telefone from tbFuncionarios;
 SELECT numero * 2 AS "Numero multiplicado por 2" FROM tbFuncionarios;
 
 
+CREATE TABLE PRODUTOS(
+    codigo, int,
+    nome varchar(50),
+    tipo varchar(25),
+    quantidade int,
+    valor decimal(10,2)
+);
+
+
