@@ -1,7 +1,7 @@
-import logo from "../../img/logo.svg";
+import logo from "../../../img/logo.svg";
 import "./style.css";
 
-function Logo() {
+function Index() {
   return (
     <div className="logo">
       <img src={logo} alt="Alfala logo" className="logo-img" />
@@ -12,4 +12,4 @@ function Logo() {
   );
 }
 
-export default Logo;
+export default Index;

@@ -1,10 +1,10 @@
 import "./style.css";
-import perfil from "../../img/perfil.svg";
-import sacola from "../../img/sacola.svg";
+import perfil from "../../../img/perfil.svg";
+import sacola from "../../../img/sacola.svg";
 
 const iconess = [perfil, sacola];
 
-const IconesHeader = () => {
+const Index = () => {
   return (
     <ul className="icones">
       {iconess.map((icone) => (
@@ -16,4 +16,4 @@ const IconesHeader = () => {
   );
 };
 
-export default IconesHeader;
+export default Index;

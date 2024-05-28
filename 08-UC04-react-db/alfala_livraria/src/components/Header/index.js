@@ -1,6 +1,7 @@
-import IconesHeader from "./IconesHeader/IconesHeader";
-import Logo from "./Logo/Logo";
+import IconesHeader from "./IconesHeader/index";
+import Logo from "./Logo/index";
 import OptionsHeader from "./OptionsHeader/index";
+import "./style.css";
 
 const Header = () => {
   return (

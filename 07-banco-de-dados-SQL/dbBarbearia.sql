@@ -47,3 +47,13 @@ SELECT * FROM tbProdutos;
 
 UPDATE tbProdutos SET preco = preco * 1.10;
 SELECT * FROM tbProdutos;
+
+SELECT codProd * 3.141692 AS "Calculando o PI",
+preco * 0.90 AS "Preco com desconto",
+preco * 1.10 AS "Preco com aumento" FROM tbProdutos;
+
+-- Atualizando o preco do primeiro produto.
+UPDATE tbProdutos SET preco = preco * 0.20 WHERE codProd = 1;
+SELECT * FROM tbProdutos;
+
+
