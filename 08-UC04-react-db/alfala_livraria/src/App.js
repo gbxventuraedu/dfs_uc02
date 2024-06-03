@@ -7,55 +7,6 @@ function App() {
       <Header />
       <div className="content">
         <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
-        <p>sopdjfosdifjosdifjosidfjoisdj</p>
       </div>
     </div>
   );
