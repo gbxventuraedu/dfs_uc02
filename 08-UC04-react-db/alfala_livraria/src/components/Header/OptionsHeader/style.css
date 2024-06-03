@@ -13,3 +13,12 @@
 .opcoes {
   display: flex;
 }
+
+li {
+  list-style: none;
+  transition: font-weight 0.15s ease-in;
+}
+li:hover {
+  color: #0059a1;
+  font-weight: 500;
+}
