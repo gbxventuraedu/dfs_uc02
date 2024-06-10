@@ -38,3 +38,4 @@ DESC tbMedico;
 DESC tbPaciente;
 DESC tbReceitaMedica;
 DESC tbConsulta;
+
