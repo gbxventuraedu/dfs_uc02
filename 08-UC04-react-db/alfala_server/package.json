@@ -1,0 +1,11 @@
+{
+  "name": "alfala_server",
+  "version": "1.0.0",
+  "description": "Este será o servidor do projeto Alfala Books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Ventura",
+  "license": "ISC"
+}
