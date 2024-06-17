@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js localhost:8000"
+    "start": "nodemon app.js localhost 8000"
   },
-  "author": "Gabriel Ventura",
+  "author": "Meu nome Jovem!!!",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
