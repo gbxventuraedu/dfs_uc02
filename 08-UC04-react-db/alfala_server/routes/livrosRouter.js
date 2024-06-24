@@ -3,6 +3,7 @@ import {
   getLivro,
   postLivro,
   patchLivro,
+  deleteLivro,
 } from "../controller/livroController.js";
 import { Router } from "express";
 
@@ -19,8 +20,6 @@ router.post("/", postLivro);
 router.patch("/:id", patchLivro);
 
 // DELETE  - Apagar um livro
-router.delete("/", (req, res) => {
-  res.send("Estou na rota delete");
-});
+router.delete("/:id", deleteLivro);
 
 export default router;
