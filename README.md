@@ -8,4 +8,4 @@
 - [x] ReactJS
 - [x] ReactJS + Vite
 - [x] SQL
-- [ ] API REST
+- [x] API REST
