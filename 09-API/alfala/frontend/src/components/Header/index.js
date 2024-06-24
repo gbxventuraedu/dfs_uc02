@@ -1,22 +1,25 @@
 import Logo from "../Logo";
-import OptionsHeader from "../OptionsHeader"
-import IconesHeader from "../IconesHeader"
-import styled from 'styled-components';
+import OptionsHeader from "../OptionsHeader";
+import IconesHeader from "../IconesHeader";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const HeaderContainer = styled.header`
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   justify-content: center;
-`
+`;
 
-function Header(){
-    return (
-        <HeaderContainer>
+function Header() {
+  return (
+    <HeaderContainer>
+      <Link to="/">
         <Logo />
-        <OptionsHeader />
-        <IconesHeader />
-      </HeaderContainer>
-    )
+      </Link>
+      <OptionsHeader />
+      <IconesHeader />
+    </HeaderContainer>
+  );
 }
 
-export default Header
+export default Header;
