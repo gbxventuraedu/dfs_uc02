@@ -370,3 +370,33 @@ ORDER BY
     valor DESC
 LIMIT
     1;
+
+-- Somar todos produtos
+SELECT
+    SUM(quantidade) AS "qtd total"
+FROM
+    produtos;
+
+-- Listar a qtd de produtos
+SELECT
+    COUNT(*) AS "Total Produtos"
+from
+    produtos;
+
+-- Listar o maior valor
+SELECT
+    MAX(valor) AS "Maior valor"
+FROM
+    produtos;
+
+-- Listar o menor valor
+SELECT
+    MIN(valor) AS "Menor valor"
+FROM
+    produtos;
+
+--Listar a media de valores
+SELECT
+    AVG(valor) AS "Media de valores"
+FROM
+    produtos;

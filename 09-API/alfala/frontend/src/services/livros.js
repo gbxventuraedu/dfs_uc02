@@ -1,10 +1,12 @@
-import axios from "axios";
+import axios from "axios"
 
-const livroAPI = axios.create({ baseURL: "http://localhost:8000/livros" });
+const livroAPI = axios.create({baseURL: "http://localhost:8000/livros"})
 
 async function getLivros() {
-  const response = await livroAPI.get("/");
-  return response.data;
+    const response = await livroAPI.get('/')
+    return response.data
 }
 
-export { getLivros };
+export {
+    getLivros
+}

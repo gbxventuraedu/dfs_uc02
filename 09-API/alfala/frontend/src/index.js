@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import reportWebVitals from "./reportWebVitals";
-import { createGlobalStyle } from "styled-components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./routers/Home";
-import Favoritos from "./routers/Favoritos";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+import { createGlobalStyle } from 'styled-components';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Header from "./components/Header"
+import Home from './routes/Home';
+import Favoritos from './routes/Favoritos';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -26,13 +26,13 @@ li{
   list-style: none;
 }
 
-`;
+`
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <BrowserRouter>
+    <BrowserRouter >
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -41,5 +41,4 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
 reportWebVitals();
